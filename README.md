@@ -2,19 +2,19 @@
 
 A small Express and MySQL demo application for user login and admin-only student management.
 
-## အကျဉ်း — ဒီ project က ဘာလဲ? (At a glance)
+## At a glance — what is this project?
 
 | | |
 | --- | --- |
 | **Project** | Node.js — TechCall Student Management |
-| **အမျိုးအစား** | Express + MySQL learning demo — login နဲ့ admin-only student CRUD |
-| **ဘာလုပ်ပေးလဲ** | Register/login (session), `scrypt` password hashing, admin ကပဲ student ထည့်/ကြည့်/ပြင်/ဖျက်, ကျန်တဲ့ user က welcome page ပဲ မြင်ရပါတယ် |
+| **Type** | Express + MySQL learning demo — login + admin-only student CRUD |
+| **What it does** | Register/login with sessions, `scrypt` password hashing, student create/list/update/delete restricted to `admin`; other users only see a welcome page |
 | **Tech** | Node.js + Express 5 + `express-session` · MySQL (`mysql2`) · `crypto.scrypt` · plain HTML/CSS/JS |
 | **Ports** | `http://localhost:8000` · MySQL `3306` |
-| **Admin account** | `admin` username ရှိသူကပဲ dashboard နဲ့ student page ဖွင့်လို့ရပါတယ် — register လုပ်ပြီး စမ်းလို့ရပါတယ် |
-| **အခြေအနေ** | `.env.example` ပါပါတယ်။ မသတ်မှတ်ရင် dev-only defaults (`root` / empty password / `techcall`) သုံးပါတယ်။ Schema file မပါပါ။ |
+| **Admin account** | Only the user named `admin` can open the dashboard and student pages — you can register to try it |
+| **Status** | `.env.example` included. Without env values it uses dev-only defaults (`root` / empty password / `techcall`). No schema file included. |
 
-**In short (English):** A learning demo with Express and MySQL: session-based registration/login, `scrypt` password hashing and student CRUD restricted to the `admin` user. Plain HTML pages with `fetch`, no build step; `project/second.js` is a separate in-memory sample API.
+In short: A learning demo with Express and MySQL: session-based registration/login, `scrypt` password hashing and student CRUD restricted to the `admin` user. Plain HTML pages with `fetch`, no build step; `project/second.js` is a separate in-memory sample API.
 
 ## Overview
 
